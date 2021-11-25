@@ -1,0 +1,29 @@
+.basket-page {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.title-basket {
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+.BP_productsInfo {
+    min-height: 25vh;
+    height: auto;
+    width: 50%;
+    background-color: blue;
+}
+
+.BP_payInfo {
+    display: flex;
+    min-height: 25vh;
+    height: auto;
+    width: 50%;
+    background-color: purple;
+}
+
+.BP_payInfo img {
+    width: 50px;
+}

@@ -1,0 +1,49 @@
+.marketing-links {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    background-color: #E4cfa9;
+    -webkit-box-shadow: 0px 10px 8px -4px rgba(49, 65, 77, 0.22);
+    -moz-box-shadow: 0px 10px 8px -4px rgba(49, 65, 77, 0.22);
+    box-shadow: 0px 10px 8px -4px rgba(49, 65, 77, 0.22);
+}
+.marketing-links__title {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+}
+.marketing-links div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+}
+.links_item {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    height: 50%;
+    width: auto;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 1px solid  #002939;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.links_item:hover {
+    background-color: #000;
+    transition: 0.5s ease;
+    color: white;
+}
