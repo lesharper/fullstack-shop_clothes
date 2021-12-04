@@ -6,24 +6,153 @@
 
 .title-basket {
     text-align: center;
-    font-size: 1.7em;
-    font-weight: 700;
+    font-size: 2em;
 }
 .BP_productsInfo {
-    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 70vh;
     height: auto;
+    width: 70%;
+    border-right: 2px dashed black;
+}
+
+.BP_productsInfo__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
     width: 50%;
-    background-color: blue;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+}
+
+.BP_productsInfo__info span {
+    font-size: 1.7em;
+}
+
+.BP_productsInfo__info a {
+    font-size: 1em;
+    border: none;
+    text-decoration: none;
+    outline: none;
 }
 
 .BP_payInfo {
     display: flex;
-    min-height: 25vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 50vh;
     height: auto;
-    width: 50%;
-    background-color: purple;
+    width: 30%;
 }
 
-.BP_payInfo img {
-    width: 50px;
+.BP_payInfo__price-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh;
+    border-radius: 7px;
+    width: 60%;
+    -webkit-box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+
+
+}
+
+.BP_payInfo__price-block span {
+    margin: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5em;
+
+}
+
+.BP_payInfo__card-block {
+    margin: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    min-height: 10vh;
+    min-width: 50%;
+    background-color: #E4cfa9;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+
+}
+
+.BP_payInfo__card-block span {
+    font-size: 1.2em;
+}
+.cards {
+    height: 40%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    -webkit-box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
+    background-color: #fff;
+
+}
+.cards img {
+    transition: 0.5s ease;
+    width: 40px;
+}
+
+
+.btn_add-price {
+    margin: 7px;
+    padding: 10px;
+    min-height: 5vh;
+    min-width: 10vw;
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    background-color: #fff;
+}
+
+.btn_add-price:hover {
+    transition: 0.5s ease;;
+    background-color: black;
+    color: white;
+}
+
+.btn-buy {
+    margin: 7px;
+    padding: 10px;
+    min-height: 5vh;
+    min-width: 10vw;
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    background-color: #E4cfa9;
+}
+
+.btn-buy:hover {
+    transition: 0.5s ease;;
+    background-color: black;
+    color: white;
 }
