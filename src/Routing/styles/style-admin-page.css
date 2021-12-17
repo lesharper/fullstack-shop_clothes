@@ -1,0 +1,107 @@
+.admin__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.admin__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    min-width: 25%;
+    background-color: #E4cfa9;
+    border-radius: 10px 10px 0 0;
+    padding: 7px;
+    font-size: 1.5em;
+    -webkit-box-shadow: 0px -1px 8px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px -1px 8px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 3px 3px rgba(34, 60, 80, 0.2);
+}
+
+.admin__form {
+    min-height: 50vh;
+    min-width: 25%;
+    background-color: #e0e0e0;
+    border-radius: 0 0 10px 10px;
+    -webkit-box-shadow: 0px -1px 8px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px -1px 8px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 3px 3px 3px rgba(34, 60, 80, 0.2);
+}
+
+.admin__form input {
+    padding: 7px;
+    min-height: 5vh;
+    width: 70%;
+    margin: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 7px;
+}
+
+.admin__form option {
+    background-color: #000;
+    color: #fff;
+}
+
+.admin__form textarea {
+    padding: 7px;
+    min-height: 15vh;
+    width: 70%;
+    margin: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    resize: none;
+    border-radius: 7px;
+}
+
+.admin__form select {
+    padding: 7px;
+    min-height: 3vh;
+    width: 100%;
+    margin: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 7px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+.admin__form label {
+    padding: 7px;
+    min-height: 3vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    flex-direction: column;
+}
+
+.admin-btn {
+    border-radius: 7px;
+    min-height: 4vh;
+    font-size: 1.2em;
+    width: 70%;
+    border: none;
+    outline: none;
+    background-color: #E4cfa9;
+    transition: 0.5s ease;
+    margin: 10px;
+    -webkit-box-shadow: 0px -1px 8px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px -1px 8px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px -1px 8px 1px rgba(34, 60, 80, 0.2);
+}
+
+.admin-btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+}

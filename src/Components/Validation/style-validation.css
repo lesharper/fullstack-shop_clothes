@@ -44,8 +44,10 @@ span {
     background-color: #E4cfa9;
 }
 
-
-button:hover {
+.valid-btn:disabled {
+    background-color: lightgray;
+}
+.valid-btn:hover {
     background-color: black;
     color: white;
     transition: 0.5s ease;
@@ -73,4 +75,17 @@ hr {
     align-items: center;
     justify-content: center;
     font-size: 1.2em;
+}
+
+.error {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: red;
+    font-size: 0.9em;
+    margin: 2px;
+}
+
+.answer {
+    font-size: 0.9em;
 }

@@ -21,11 +21,12 @@
 
 .BP_productsInfo__info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 15vh;
-    width: 50%;
+    min-height: 15vh;
+    flex-wrap: wrap;
+    width: 70%;
     border-radius: 7px;
     -webkit-box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 1px 8px 3px rgba(34, 60, 80, 0.2);
@@ -44,6 +45,8 @@
 }
 
 .BP_payInfo {
+    position: fixed;
+    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

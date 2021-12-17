@@ -1,27 +1,29 @@
 import React, {useContext, useEffect, useState} from 'react';
 import "./styles/style-pages.css"
 import {all_products, delete_product} from "../Axios/shop";
+import {add_liked, delete_like, get_liked} from "../Axios/liked";
 import {AdminContext, AuthContext} from "../Context/Context";
-import {add_liked} from "../Axios/liked";
 import {Link} from "react-router-dom";
 import {add_basket} from "../Axios/basket";
 
-const CatalogPage = () => {
-    const [allProducts, setAllProducts] = useState([])
-
+const LikedPage = () => {
+    const [likeProducts, setLikeProducts] = useState([])
     const {isAdmin} = useContext(AdminContext)
     const {isAuth} = useContext(AuthContext)
     const [render, setRender] = useState(false)
 
     useEffect(() => {
-        all_products(setAllProducts)
+        get_liked(setLikeProducts)
     }, [render])
 
-    const products = allProducts.map(element => {
+    const products = likeProducts.map(element => {
         return (
             <div className="card">
                 <div className="card_header">
-                    {isAuth ? <span onClick={() => add_liked(element.id)}>&#10084;</span> : <span></span>}
+                    {isAuth ? <span  style={{color:"red"}} onClick={() => {
+                        delete_like(element.id)
+                        setRender(!render)
+                    }}>&#10084;</span> : ''}
                     {isAdmin ? <span onClick={() => {
                         delete_product(element.id)
                         setRender(!render)
@@ -44,13 +46,22 @@ const CatalogPage = () => {
             </div>
         )
     })
+
     return (
         <div className="page_wrapper">
             <div className="page_contents_block">
-                {products}
+                {products.length !== 0 ?  <div>{products}</div>
+                    : (
+                        <>
+                            <span>Список понравившегося пуст!</span>
+                        </>
+
+                    )
+                }
+
             </div>
         </div>
     );
 }
 
-export default CatalogPage;
+export default LikedPage;

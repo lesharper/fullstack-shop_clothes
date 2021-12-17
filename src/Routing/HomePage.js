@@ -3,7 +3,8 @@ import Promo from "../Components/Promo/Promo";
 import MarketingLinks from "../Components/MarketingLinks/MarketingLinks";
 import NewOutfitList from "../Components/NewOufitList/NewOutfitList";
 
-const HomePage = (props) =>{
+const HomePage = () =>{
+
     return (
         <>
             <Promo/>

@@ -10,32 +10,33 @@ const NewOutfitList = () => {
             <div className="new_outfit__title">Актуальные</div>
             <hr className="line-title"/>
                 <div className="new_outfit__list">
-                    <div className="new_outfit__item">
-                        <img src={example_shirt} alt="example-shirt"/>
-                        <div className="example-text">
-                            Рубашка заебись
+                    <div className="card">
+                        <div className="card_header">Куколд</div>
+                        <img src={example_shirt} alt="example-shirt" className="card_image"/>
+                        <div className="card_info">
+                            Рубашка
                         </div>
                     </div>
-                    <div className="new_outfit__item">
-                        <img src={example_jeans} alt="example-jeans"/>
-                        <div className="example-text">
-                            Джинсы топ
-                        </div>
-                    </div>
+                    {/*<div className="new_outfit__item">*/}
+                    {/*    <img src={example_jeans} alt="example-jeans"/>*/}
+                    {/*    <div className="example-text">*/}
+                    {/*        Джинсы*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
-                    <div className="new_outfit__item">
-                        <img src={example_tshirt} alt="example-tshirt"/>
-                        <div className="example-text">
-                            Футболки заебись
-                        </div>
-                    </div>
+                    {/*<div className="new_outfit__item">*/}
+                    {/*    <img src={example_tshirt} alt="example-tshirt"/>*/}
+                    {/*    <div className="example-text">*/}
+                    {/*        Футболка*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
-                    <div className="new_outfit__item">
-                        <img src={example_sneakers} alt="example-sneakers"/>
-                        <div className="example-text">
-                            Ботинки заебись
-                        </div>
-                    </div>
+                    {/*<div className="new_outfit__item">*/}
+                    {/*    <img src={example_sneakers} alt="example-sneakers"/>*/}
+                    {/*    <div className="example-text">*/}
+                    {/*        Кроссовки*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
         </section>
     );
